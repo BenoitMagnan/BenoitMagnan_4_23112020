@@ -8,14 +8,9 @@ body {
 }
 
 a,
-button {
+button,
+.form-control {
     transition: all .3s ease-in-out;
-    outline: none!important;
-}
-
-a:hover {
-    text-decoration: none;
-    cursor: pointer;
 }
 
 #page-loading-blocs-notifaction {
@@ -80,21 +75,6 @@ a:hover {
     background: top no-repeat;
 }
 
-.bloc-bg-texture::before {
-    content: "";
-    background-size: 2px 2px;
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-}
-
-.texture-paper::before {
-    background: url("img/texture-paper.png");
-    background-size: 280px 280px;
-}
-
 .b-parallax {
     background-attachment: fixed;
 }
@@ -133,7 +113,7 @@ a:hover {
 .d-bloc h5 a,
 .d-bloc h6 a,
 .d-bloc p a {
-    color: rgba(255, 255, 255, .6);
+    color: black;
 }
 
 .d-bloc .a-btn:hover,
@@ -351,6 +331,15 @@ a:hover {
     width: 26px;
 }
 
+#nav-toggle:focus {
+    outline: 2px dashed #D82F4F; 
+}
+
+#nav-toggle:hover >* {
+    background-color: #F3976C;
+}
+
+
 .nav-invert .navbar .nav {
     float: left;
 }
@@ -458,10 +447,6 @@ nav .caret {
 .btn-d:focus {
     color: #FFF;
     background: rgba(0, 0, 0, .3);
-}
-
-button {
-    outline: none!important;
 }
 
 .btn-rd {
@@ -677,7 +662,7 @@ a {
 }
 
 p {
-    font-size: 11px;
+    font-size: 1em;
 }
 
 .tight-width-whitespace {
@@ -701,7 +686,8 @@ p {
 
 .social {
     max-width: 400px;
-    margin: auto auto auto auto;
+    margin: auto;
+    padding: 15px;
 }
 
 h2 {
@@ -739,6 +725,10 @@ h4 {
     color: #FFFFFF!important;
 }
 
+.black {
+    color: black!important;
+}
+
 .portfolio-thumb {
     margin-bottom: 24px;
 }
@@ -753,7 +743,7 @@ h4 {
 }
 
 .black-background {
-    background-color: rgba(165, 147, 99, 0.7);
+    background-color: rgb(48, 48, 48, 0.95);
     padding: 40px 40px 40px 40px;
 }
 
@@ -780,12 +770,11 @@ h4 {
 
 .btn-atomic-tangerine {
     background: #F3976C;
-    color: #FFFFFF!important;
+    color: black!important;
 }
 
 .btn-atomic-tangerine:hover {
-    background: #c27956!important;
-    color: #FFFFFF!important;
+    text-decoration: underline;
 }
 
 .ltc-white {
@@ -813,16 +802,32 @@ h4 {
     background-image: url("img/dots-bg.png");
 }
 
-.bg-lines-h2-bg {
-    background-image: url("img/lines-h2-bg.png");
-}
-
 .bg-banniere {
     background-image: url("img/la-chouette-agence-banniere.jpg");
 }
 
 .bg-presentation {
-    background-image: url("img/image-de-presentation.bmp");
+    background-image: url("img/image-de-presentation.jpg");
+}
+
+a:hover {
+    text-decoration: underline!important;
+    cursor: pointer;
+}
+
+a:focus, button:focus, .btn:focus{
+    text-decoration: underline!important;
+    cursor: pointer;
+    outline: 2px dashed #D82F4F; 
+}
+
+.form-control:focus {
+    outline: 2px dashed #D82F4F;
+}
+
+#logo {
+    border: 5px solid #F3976C;
+    border-radius: 100%;
 }
 
 @media (max-width: 1024px) {
