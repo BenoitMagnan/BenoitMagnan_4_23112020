@@ -281,6 +281,10 @@ button,
     line-height: 44px;
 }
 
+.navbar-brand:hover{
+    transform: translate(15px);
+}
+
 .navbar-brand img {
     max-height: 200px;
     margin: 0 5px 0 0;
@@ -332,7 +336,7 @@ button,
 }
 
 #nav-toggle:focus {
-    outline: 2px dashed #D82F4F; 
+    outline: 2px dashed #D82F4F;
 }
 
 #nav-toggle:hover >* {
@@ -816,18 +820,18 @@ a:hover {
 }
 
 a:focus, button:focus, .btn:focus{
-    text-decoration: underline!important;
     cursor: pointer;
-    outline: 2px dashed #D82F4F; 
-}
-
-.form-control:focus {
-    outline: 2px dashed #D82F4F;
+    outline: 2px dashed #353535;
+    outline-offset: 5px;
 }
 
 #logo {
     border: 5px solid #F3976C;
     border-radius: 100%;
+}
+
+.focus-black:focus {
+    outline: 2px dashed white;
 }
 
 @media (max-width: 1024px) {
