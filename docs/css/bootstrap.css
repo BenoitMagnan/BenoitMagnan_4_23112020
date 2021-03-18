@@ -4348,7 +4348,7 @@ tbody.collapse.in {
     color: #fff;
     text-decoration: none;
     background-color: #337ab7;
-    outline: 0
+    outline: 0;
 }
 
 .dropdown-menu>.disabled>a,
@@ -4363,7 +4363,7 @@ tbody.collapse.in {
     cursor: not-allowed;
     background-color: transparent;
     background-image: none;
-    filter: progid:DXImageTransform.Microsoft.gradient(enabled=false)
+    filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
 }
 
 .open>.dropdown-menu {
